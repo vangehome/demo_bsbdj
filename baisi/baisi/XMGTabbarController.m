@@ -7,7 +7,11 @@
 //
 
 #import "XMGTabbarController.h"
-
+#import "XMGNewViewController.h"
+#import "XMGMEViewController.h"
+#import "XMGFriendTrendsViewController.h"
+#import "XMGessenceViewController.h"
+#import "XMGTabBar.h"
 @implementation XMGTabbarController
 
 -(void)viewDidLoad{
@@ -42,30 +46,27 @@
     
     
     //属性设置结束
-    UIViewController* v2=[[UIViewController alloc ] init];
-    v2.tabBarItem.title=@"新帖";
-    v2.tabBarItem.image=[UIImage imageNamed:@"tabBar_new_icon"];
-    v2.tabBarItem.selectedImage=[UIImage imageNamed:@"tabBar_new_click_icon"];    //标题
     
-    UIViewController* v3=[[UIViewController alloc ] init];
-    v3.tabBarItem.title=@"关注";
-    v3.tabBarItem.image=[UIImage imageNamed:@"tabBar_friendTrends_icon"];
-    v3.tabBarItem.selectedImage=[UIImage imageNamed:@"tabBar_friendTrends_click_icon"];    //标题
+    [self addtab:[[XMGessenceViewController alloc] init] title: @"精华" image:@"tabBar_essence_icon" selectImg:@"tabBar_essence_click_icon"];
+    [self addtab:[[XMGNewViewController alloc] init] title: @"新帖" image:@"tabBar_new_icon" selectImg:@"tabBar_new_click_icon"];
+    [self addtab:[[XMGFriendTrendsViewController alloc] init] title: @"关注" image:@"tabBar_friendTrends_icon" selectImg:@"tabBar_friendTrends_click_icon"];
+
+    [self addtab:[[XMGMEViewController alloc] init] title: @"我" image:@"tabBar_me_icon" selectImg:@"tabBar_me_click_icon"];
+    ////////////
+        [self setValue:[[XMGTabBar alloc] init] forKeyPath:@"tabBar"];
     
-    UIViewController* v4=[[UIViewController alloc ] init];
-    v4.tabBarItem.title=@"我";
-    v4.tabBarItem.image=[UIImage imageNamed:@"tabBar_me_icon"];
-    v4.tabBarItem.selectedImage=[UIImage imageNamed:@"tabBar_me_click_icon"];    //标题
+  }
+
+//添加子控制器
+-(void)addtab:(UIViewController*)vc title:(NSString*) title image:(NSString*)image selectImg:(NSString*)selectImg{
+   
+    vc.tabBarItem.title=title;
+    vc.tabBarItem.image=[UIImage imageNamed:image];
     
-    
-    
-    //添加到tabbar
-    [self addChildViewController:v1];
-    [self addChildViewController:v2];
-    [self addChildViewController:v3];
-    [self addChildViewController:v4];
+    vc.tabBarItem.selectedImage=[UIImage imageNamed:selectImg];
+    vc.view.backgroundColor=[UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0  blue:arc4random_uniform(100)/100.0  alpha:1.0];
+    [self addChildViewController:vc];
 
 }
-
 
 @end

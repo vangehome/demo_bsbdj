@@ -1,5 +1,5 @@
 //
-//  XMGTabbarController.h
+//  XMGessenceViewController.h
 //  baisi
 //
 //  Created by ANDY on 16/4/8.
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface XMGTabbarController : UITabBarController
+
+@interface XMGessenceViewController : UIViewController
 
 @end

@@ -14,6 +14,11 @@
 		A16AF1E41CB7629300ED164F /* baisi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A16AF1E21CB7629300ED164F /* baisi.xcdatamodeld */; };
 		A16AF1E61CB7629300ED164F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A16AF1E51CB7629300ED164F /* Assets.xcassets */; };
 		A16AF1F21CB7694200ED164F /* XMGTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16AF1F11CB7694200ED164F /* XMGTabbarController.m */; };
+		A16AF1F51CB780FD00ED164F /* XMGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16AF1F41CB780FD00ED164F /* XMGNewViewController.m */; };
+		A16AF1F81CB7811C00ED164F /* XMGMEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16AF1F71CB7811C00ED164F /* XMGMEViewController.m */; };
+		A16AF1FB1CB7814400ED164F /* XMGessenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16AF1FA1CB7814400ED164F /* XMGessenceViewController.m */; };
+		A16AF1FE1CB7817A00ED164F /* XMGFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16AF1FD1CB7817A00ED164F /* XMGFriendTrendsViewController.m */; };
+		A16AF2011CB7867400ED164F /* XMGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A16AF2001CB7867400ED164F /* XMGTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,16 @@
 		A16AF1EA1CB7629300ED164F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A16AF1F01CB7694200ED164F /* XMGTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabbarController.h; sourceTree = "<group>"; };
 		A16AF1F11CB7694200ED164F /* XMGTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabbarController.m; sourceTree = "<group>"; };
+		A16AF1F31CB780FD00ED164F /* XMGNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMGNewViewController.h; path = ../XMGNewViewController.h; sourceTree = "<group>"; };
+		A16AF1F41CB780FD00ED164F /* XMGNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMGNewViewController.m; path = ../XMGNewViewController.m; sourceTree = "<group>"; };
+		A16AF1F61CB7811C00ED164F /* XMGMEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGMEViewController.h; sourceTree = "<group>"; };
+		A16AF1F71CB7811C00ED164F /* XMGMEViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGMEViewController.m; sourceTree = "<group>"; };
+		A16AF1F91CB7814400ED164F /* XMGessenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGessenceViewController.h; sourceTree = "<group>"; };
+		A16AF1FA1CB7814400ED164F /* XMGessenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGessenceViewController.m; sourceTree = "<group>"; };
+		A16AF1FC1CB7817A00ED164F /* XMGFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFriendTrendsViewController.h; sourceTree = "<group>"; };
+		A16AF1FD1CB7817A00ED164F /* XMGFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGFriendTrendsViewController.m; sourceTree = "<group>"; };
+		A16AF1FF1CB7867400ED164F /* XMGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTabBar.h; sourceTree = "<group>"; };
+		A16AF2001CB7867400ED164F /* XMGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +77,21 @@
 			isa = PBXGroup;
 			children = (
 				A16AF1D91CB7629300ED164F /* AppDelegate.h */,
+				A16AF1F31CB780FD00ED164F /* XMGNewViewController.h */,
+				A16AF1F41CB780FD00ED164F /* XMGNewViewController.m */,
+				A16AF1F61CB7811C00ED164F /* XMGMEViewController.h */,
+				A16AF1F71CB7811C00ED164F /* XMGMEViewController.m */,
+				A16AF1F91CB7814400ED164F /* XMGessenceViewController.h */,
+				A16AF1FA1CB7814400ED164F /* XMGessenceViewController.m */,
+				A16AF1FC1CB7817A00ED164F /* XMGFriendTrendsViewController.h */,
+				A16AF1FD1CB7817A00ED164F /* XMGFriendTrendsViewController.m */,
 				A16AF1DA1CB7629300ED164F /* AppDelegate.m */,
 				A16AF1DC1CB7629300ED164F /* ViewController.h */,
 				A16AF1DD1CB7629300ED164F /* ViewController.m */,
 				A16AF1F01CB7694200ED164F /* XMGTabbarController.h */,
 				A16AF1F11CB7694200ED164F /* XMGTabbarController.m */,
+				A16AF1FF1CB7867400ED164F /* XMGTabBar.h */,
+				A16AF2001CB7867400ED164F /* XMGTabBar.m */,
 				A16AF1DF1CB7629300ED164F /* Main.storyboard */,
 				A16AF1E51CB7629300ED164F /* Assets.xcassets */,
 				A16AF1EA1CB7629300ED164F /* Info.plist */,
@@ -110,6 +135,7 @@
 		A16AF1CB1CB7629300ED164F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XMG;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = dinq;
 				TargetAttributes = {
@@ -154,10 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A16AF2011CB7867400ED164F /* XMGTabBar.m in Sources */,
 				A16AF1DE1CB7629300ED164F /* ViewController.m in Sources */,
 				A16AF1DB1CB7629300ED164F /* AppDelegate.m in Sources */,
+				A16AF1F51CB780FD00ED164F /* XMGNewViewController.m in Sources */,
+				A16AF1F81CB7811C00ED164F /* XMGMEViewController.m in Sources */,
 				A16AF1E41CB7629300ED164F /* baisi.xcdatamodeld in Sources */,
 				A16AF1D81CB7629300ED164F /* main.m in Sources */,
+				A16AF1FE1CB7817A00ED164F /* XMGFriendTrendsViewController.m in Sources */,
+				A16AF1FB1CB7814400ED164F /* XMGessenceViewController.m in Sources */,
 				A16AF1F21CB7694200ED164F /* XMGTabbarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
