@@ -28,12 +28,12 @@ UIButton* _publishButton;
 -(void)layoutSubviews{
     [super layoutSubviews];
     _publishButton.frame=CGRectMake(0, 0, _publishButton.currentBackgroundImage.size.width, _publishButton.currentBackgroundImage.size.height);
-    _publishButton.center=CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+    _publishButton.center=CGPointMake(self.width/2, self.height/2);
     [self addSubview:_publishButton];
     
     CGFloat buttonY=0;
-    CGFloat buttonW=self.frame.size.width/5;
-    CGFloat buttonH=self.frame.size.height;
+    CGFloat buttonW=self.width/5;
+    CGFloat buttonH=self.height;
     NSInteger index=0;
     //对tabbar的子控件遍历，设置间距
     for (UIView* button in self.subviews) {
