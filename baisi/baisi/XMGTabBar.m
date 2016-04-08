@@ -35,6 +35,7 @@ UIButton* _publishButton;
     CGFloat buttonW=self.frame.size.width/5;
     CGFloat buttonH=self.frame.size.height;
     NSInteger index=0;
+    //对tabbar的子控件遍历，设置间距
     for (UIView* button in self.subviews) {
         //
         
