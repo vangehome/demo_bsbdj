@@ -15,7 +15,7 @@
 
 
 #import "UIView+XMGExtension.h"
-
+#define  XMGLogFun NSLog(@"%s",__func__);
 
 #endif /* PrefixHeader_pch */
 

@@ -9,7 +9,11 @@
 #import "UIView+XMGExtension.h"
 
 @implementation UIView (XMGExtension)
-
+-(void)setSize:(CGSize)size{
+    CGRect frame=self.frame;
+    frame.size=size;
+    self.frame=frame;
+}
 -(void)setWidth:(CGFloat)width{
     
     CGRect frame=self.frame;
@@ -29,5 +33,8 @@
 }
 -(CGFloat)height{
     return self.frame.size.height;
+}
+-(CGSize)size{
+    return self.frame.size;
 }
 @end

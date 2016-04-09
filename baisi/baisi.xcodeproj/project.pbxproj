@@ -81,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				A16AF1D91CB7629300ED164F /* AppDelegate.h */,
+				A16AF1DA1CB7629300ED164F /* AppDelegate.m */,
 				A16AF1F31CB780FD00ED164F /* XMGNewViewController.h */,
 				A16AF1F41CB780FD00ED164F /* XMGNewViewController.m */,
 				A16AF1F61CB7811C00ED164F /* XMGMEViewController.h */,
@@ -89,7 +90,6 @@
 				A16AF1FA1CB7814400ED164F /* XMGessenceViewController.m */,
 				A16AF1FC1CB7817A00ED164F /* XMGFriendTrendsViewController.h */,
 				A16AF1FD1CB7817A00ED164F /* XMGFriendTrendsViewController.m */,
-				A16AF1DA1CB7629300ED164F /* AppDelegate.m */,
 				A16AF1DC1CB7629300ED164F /* ViewController.h */,
 				A16AF1DD1CB7629300ED164F /* ViewController.m */,
 				A16AF1F01CB7694200ED164F /* XMGTabbarController.h */,
